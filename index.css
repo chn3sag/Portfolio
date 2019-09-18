@@ -1,0 +1,51 @@
+:root{
+    font-size: calc(16px+2vw);
+}
+
+.header-info{
+    background-color: grey;
+    color: black;
+    text-align: center;
+    width: 100%;
+    height: 30vh;
+    padding-top:5%;
+
+}
+
+main {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.nav, .contact {
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 10vh;
+    padding-top: 1vh;
+}
+
+.contact {
+    height: 15vh;
+}
+
+ul {
+    list-style: none;
+}
+
+.bio, .projects {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(61, 61, 61);
+    width: 100%;
+    height: 30vh;
+    padding-top: 5%;
+}
+
+.projects {
+  background-color: #ddd;
+}
