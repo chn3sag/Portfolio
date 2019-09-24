@@ -1,15 +1,114 @@
 :root{
     font-size: calc(16px+2vw);
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Old Standard TT', serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+i {
+    color: white;
+}
+
+i:hover {
+    color: #eb7434;
+}
+
+ul {
+    list-style: none;
+}
+
+.portfolio-name {
+    display: inline-block;
+    position: absolute;
+    text-align: left;
+    color: white;
+    left: 5px;
+    bottom: 1px;
+    font-size: 1.5rem;
+}
+
+.nav {
+    width: 100%;
+    font-family: 'Old Standard TT', serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 7vh;
+    padding-top: 1vh;
+    position: fixed;
+    margin: 0px 0px;
+    z-index: 4;
+}
+
+.contact {
+    width: 100%;
+    font-family: 'Old Standard TT', serif;
+    height: 15vh;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 1vh;
+}
+
+.menu-links{
+    display: none;
+}
+
+.hamburger-icon {
+    font-size: 1.5rem;
+    display: inline-block;
+    position: absolute;
+    text-align: right;
+    right: 5px;
+    bottom: 1px;
+}
+
+.nav-menu {
+    display: inline-block;
+}
+
+
+.nav-menu.open-menu {
+    display: block;
+    padding-top: 7vh;
+    background-color: black;
+    width: 100%;
+}
+
+
+.menu-links.open-menu {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 3vh 5vh;
+    font-size: 1.2rem;
+}
+
+.menu-links.open-menu:hover {
+        background-color: #eb7434;
 }
 
 .header-info{
+    font-family: 'Old Standard TT', serif;
     background-color: grey;
     color: black;
     text-align: center;
     width: 100%;
-    height: 30vh;
+    height: 70vh;
     padding-top:5%;
 }
+
 
 main {
     width: 100%;
@@ -18,25 +117,25 @@ main {
     text-align: center;
 }
 
-.nav, .contact {
-    background-color: black;
-    color: white;
-    text-align: center;
-    height: 10vh;
-    padding-top: 1vh;
-}
-
 .contact {
-    height: 15vh;
+    height: 30vh;
+    line-height: 1.7;
 }
 
-ul {
-    list-style: none;
+.contact p {
+    padding-left:2vw;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-menu a {
+    color: white;
 }
 
 .bio, .projects {
-    margin-top: 1vh;
-    margin-bottom: 1vh;
     margin-left: auto;
     margin-right: auto;
     background-color: rgb(61, 61, 61);
