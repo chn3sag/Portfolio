@@ -1,0 +1,322 @@
+:root{
+    font-size: calc(16px+2vw);
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Old Standard TT', serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+i {
+    color: white;
+}
+
+i:hover {
+    color: #eb7434;
+}
+
+ul {
+    list-style: none;
+}
+
+.portfolio-name {
+    display: inline-block;
+    position: absolute;
+    text-align: left;
+    color: white;
+    left: 5px;
+    bottom: 1px;
+    font-size: 1.5rem;
+}
+
+.nav {
+    width: 100%;
+    font-family: 'Old Standard TT', serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 7vh;
+    padding-top: 1vh;
+    position: fixed;
+    margin: 0px 0px;
+    z-index: 4;
+}
+
+.contact {
+    width: 100%;
+    font-family: 'Old Standard TT', serif;
+    height: 15vh;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 1vh;
+}
+
+.menu-links{
+    display: none;
+}
+
+.hamburger-icon {
+    font-size: 1.5rem;
+    display: inline-block;
+    position: absolute;
+    text-align: right;
+    right: 5px;
+    bottom: 1px;
+}
+
+.nav-menu {
+    display: inline-block;
+}
+
+
+.nav-menu.open-menu {
+    display: block;
+    padding-top: 7vh;
+    background-color: black;
+    width: 100%;
+}
+
+
+.menu-links.open-menu {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 3vh 5vh;
+    font-size: 1.2rem;
+}
+
+.menu-links.open-menu:hover {
+        background-color: #eb7434;
+}
+
+.header-info{
+    font-family: 'Old Standard TT', serif;
+    background-color: grey;
+    color: black;
+    text-align: center;
+    width: 100%;
+    height: 70vh;
+    padding-top:5%;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("images/bg_1.jpg");
+    background-size: cover;
+    height: 80vh;
+    position: relative;
+    top: 8vh;
+    overflow: auto;
+    background-position: center center;
+}
+
+.headline {
+    bottom:40vh;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 30px 10px;
+    color: white;
+    font-size: 1.5rem;
+    position: absolute;
+    background: inherit;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.headline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  background-attachment: fixed;
+  filter: blur(4px);
+}
+
+.headline::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25)
+}
+
+.headline > h2, .headline > h3 {
+   margin: 0;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+
+main {
+    font-size: 1.1rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.contact {
+    height: 30vh;
+    line-height: 1.7;
+}
+
+.contact p {
+    padding-left:2vw;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-menu a {
+    color: white;
+}
+
+.bio, .projects {
+    margin-left: auto;
+    margin-right: auto;
+    background-color:black;
+    width: auto;
+    height: 100%;
+    padding: 10% 5%;
+    color: white;
+    line-height: 1.5;
+    font-size: 1.4rem;
+}
+
+.projects {
+    background-color: #eb7434;
+    color: black;
+    width: auto;
+}
+
+.project-list {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project{
+    width: 80%;
+    position: relative;
+    align-self: center;
+}
+
+.prj-img-title {
+    width: 100%;
+    height: 230px;
+    position: relative;
+}
+
+.project-title {
+    padding: 1%;
+    color: white;
+    position: absolute;
+    bottom: 5%;
+    left: 1%;
+}
+
+.project-desc {
+    position: relative;
+    text-align: left;
+    color: black;
+    bottom: 0;
+}
+
+.project-desc li {
+    display: inline;
+}
+
+.project-1 {
+    background-image: url("images/QuizApp.jpg");
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.prj-links {
+    color: black;
+    text-align: center;
+}
+
+.prj-links:hover {
+    color: white;
+}
+
+.extra-info {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (min-width: 980px) {
+    .project {
+        width: 33%;
+    }
+
+    .prj-img-title {
+        height: 350px;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .hamburger-icon {
+        display: none;
+    }
+
+    .nav-menu {
+       display: inline; 
+       position: absolute;
+       right: 0px;
+       bottom: 1px;
+    }
+
+    .menu-links  {
+        display: inline;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 0px 16px;
+        font-size: 1.2rem;
+    }
+
+    .menu-links:hover {
+        background-color: #eb7434;
+    }
+
+    .social {
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 1%;
+        padding: 1%;
+    }
+
+    .project {
+        width: 50%;
+    }
+
+    .contact {
+        height: 20vh;
+    }
+
+}
