@@ -96,7 +96,7 @@ ul {
 }
 
 .menu-links.open-menu:hover {
-        background-color: #eb7434;
+    background-color: #eb7434;
 }
 
 .header-info{
@@ -116,7 +116,7 @@ ul {
     height: 80vh;
     position: relative;
     top: 8vh;
-    overflow: auto;
+    overflow: hidden;
     background-position: center center;
 }
 
@@ -135,55 +135,59 @@ ul {
 }
 
 .headline::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: inherit;
-  background-attachment: fixed;
-  filter: blur(4px);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% ;
+    height: 100%;
+    background: inherit;
+    background-attachment: fixed;
+    filter: blur(4px);
 }
 
 .headline::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.25)
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
 }
 
 .headline > h2, .headline > h3 {
-   margin: 0;
-  color: white;
-  position: relative;
-  z-index: 1;
+    margin: 0;
+    color: white;
+    position: relative;
+    z-index: 1;
 }
-
 
 main {
     font-size: 1.1rem;
     width: 100%;
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
 
 .contact {
-    height: 30vh;
+    height: 50vh;
     line-height: 1.7;
 }
 
 .contact p {
-    padding-left:2vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
 }
 
 .social {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    font-size: 1.8rem;
 }
 
 .nav-menu a {
@@ -195,17 +199,19 @@ main {
     margin-right: auto;
     background-color:black;
     width: auto;
-    height: 100%;
-    padding: 10% 5%;
+    height: 70vh;
+    padding: 20% 5% 10% 5%;
     color: white;
     line-height: 1.5;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 .projects {
     background-color: #eb7434;
+    padding: 7% 5%;
     color: black;
     width: auto;
+    height: auto;
 }
 
 .project-list {
@@ -232,10 +238,8 @@ main {
 
 .project-title {
     padding: 1%;
-    color: white;
-    position: absolute;
-    bottom: 5%;
-    left: 1%;
+    color: black;
+    font-weight: bold;
 }
 
 .project-desc {
@@ -265,11 +269,12 @@ main {
     color: white;
 }
 
-.extra-info {
+.extra-info, .project-title {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
+
 @media screen and (min-width: 980px) {
     .project {
         width: 33%;
@@ -317,6 +322,13 @@ main {
 
     .contact {
         height: 20vh;
+    }
+
+    .bio {
+        font-size: 1.8rem;
+    }
+    .projects {
+        font-size: 1.6rem;
     }
 
 }
