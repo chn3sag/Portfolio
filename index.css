@@ -165,7 +165,6 @@ main {
 .contact p {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 20px;
 }
 
 .social {
@@ -248,10 +247,14 @@ main {
 .prj-links {
     color: black;
     text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 .prj-links:hover {
     color: white;
+    border-color: white;
 }
 
 .extra-info, .project-title {
